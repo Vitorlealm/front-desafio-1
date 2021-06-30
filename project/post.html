@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desafio 1</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>Post</title>
+    <link rel="stylesheet" href="./postStyle.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 </head>
@@ -36,34 +36,47 @@
             <div class="card">
                 <h1>Lorem ipsum dolor sit amet</h1>
                 <p class="date">26/07/2020 às 00:04 - Por: Vitor Legal</p>
-                <img src="./pessoa.png" alt="A person mixing a song">
+                <img src="../assets/pessoa.png" alt="A person mixing a song">
                 <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus quis augue elementum vestibulum. Nam a orci erat. Aenean arcu mauris, finibus a rutrum quis, commodo sollicitudin nibh. Morbi diam lacus, suscipit nec maximus et, tincidunt at quam. </p>
                 <p class="description">Curabitur sit amet euismod mi. Duis dictum vel ipsum vel tempus. Etiam diam nisl, feugiat ornare enim ac, aliquam ultrices erat. Nam tincidunt cursus dui. Integer varius nisi quis dui commodo, vitae euismod nisi elementum. Vivamus tincidunt id massa eget blandit.</p>
-                <div class="buton">
-                    <a href="./post.html"style="margin-left: auto;"><button>Continuar lendo</button></a> 
-                </div>         
-            </div>
-            <div class="card">
-                <h1>Lorem ipsum dolor sit amet</h1>
-                <p class="date">26/07/2020 às 00:04 - Por: Vitor Legal</p>
-                <img src="./computador.png" alt="A laptop with some code on the screen">
+                <ul class="lists">
+                    <li>Lorem ipsum dolor sit amet consectetur
+                        <ul style="list-style-type: disc;">
+                            <li>Lorem, ipsum dolor.</li>
+                            <li>Numquam, similique debitis!</li>
+                            <li>Itaque, nam labore?</li>
+                        </ul>
+                    </li>
+                    <li>Quibusdam sapiente velit nulla delectus enim?</li>
+                    <li>Officia dolore autem sint aliquid commodi!</li>
+                    <li>Eius asperiores deserunt aliquid animi quo.</li>
+                    <li>Saepe explicabo blanditiis aspernatur suscipit voluptates.</li>
+                </ul>
                 <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus quis augue elementum vestibulum. Nam a orci erat. Aenean arcu mauris, finibus a rutrum quis, commodo sollicitudin nibh. Morbi diam lacus, suscipit nec maximus et, tincidunt at quam. </p>
                 <p class="description">Curabitur sit amet euismod mi. Duis dictum vel ipsum vel tempus. Etiam diam nisl, feugiat ornare enim ac, aliquam ultrices erat. Nam tincidunt cursus dui. Integer varius nisi quis dui commodo, vitae euismod nisi elementum. Vivamus tincidunt id massa eget blandit.</p>
-                <div class="buton">
-                    <a href="./post.html"style="margin-left: auto;"><button>Continuar lendo</button></a>  
-                </div>         
-            </div>
-            <div class="card">
-                <h1>Lorem ipsum dolor sit amet</h1>
-                <p class="date">26/07/2020 às 00:04 - Por: Vitor Legal</p>
-                <img src="./pintura.png" alt="A person painting">
                 <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus quis augue elementum vestibulum. Nam a orci erat. Aenean arcu mauris, finibus a rutrum quis, commodo sollicitudin nibh. Morbi diam lacus, suscipit nec maximus et, tincidunt at quam. </p>
                 <p class="description">Curabitur sit amet euismod mi. Duis dictum vel ipsum vel tempus. Etiam diam nisl, feugiat ornare enim ac, aliquam ultrices erat. Nam tincidunt cursus dui. Integer varius nisi quis dui commodo, vitae euismod nisi elementum. Vivamus tincidunt id massa eget blandit.</p>
-                <div class="buton">
-                    <a href="./post.html"style="margin-left: auto;"><button>Continuar lendo</button></a>
-                </div>         
             </div>
-        </div>
+            <div class="comments">
+                <h1 style="grid-column-start: 1; grid-column-end: 3; color: black;">Comentários</h1>
+                <form action="" style="grid-row: 2; margin-right: 10px;">
+                    <div style="display: flex; margin: 0; padding: 0;">
+                        <div style="display: flex; flex-direction: column;">
+                            <label for="nometxt" style="padding-left: 20px;">Nome</label>
+                            <input type="text" id="nometxt">
+                        </div>
+                        <div style="display: flex; flex-direction: column;">
+                            <label for="emailtxt" style="padding-left: 20px;">Email</label>
+                            <input type="text" id="emailtxt">
+                        </div>
+                    </div>
+                    <label for="contatotxt" style="padding-left: 20px;">Comentário</label>
+                    <input type="text" id="contatotxt" style="width: 715px; height: 300px;">
+                    <button type="submit">Comentar</button>
+                </form>
+                
+            </div>
+        </div> 
         <div class="menu">
             <form action="https://www.google.com/search" method="GET" target="_blank">
                 <input type="text" name="q">
@@ -84,8 +97,6 @@
             <div class="publicity"></div>
 
         </div>
-    </main>
+    </main> 
     <footer>Copyright ©2021 Todos os direitos reservados | Por Vitor Legal</footer>
-    
 </body>
-</html>
